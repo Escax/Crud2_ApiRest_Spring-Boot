@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "67bb6a5d-aba0-46cd-b2da-ce6db831f9db",
+		"name": "Crud2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20803972"
+	},
+	"item": [
+		{
+			"name": "MostrarCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/api/v1/cliente/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"cliente",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardarCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Esneider\",\r\n    \"apellido\": \"Cardozo\",\r\n    \"correo\": \"esneider@gmail.com\",\r\n    \"fecha_registro\": \"2023-11-29T05:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/api/v1/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ActualizarCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id_cliente\": 4,\r\n    \"nombre\": \"Edwar\",\r\n    \"apellido\": \"Perez\",\r\n    \"correo\": \"milton@gmail.com\",\r\n    \"fecha_registro\": \"2023-11-29T05:00:00.000+00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8092/api/v1/cliente",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8092/api/v1/cliente/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8092",
+					"path": [
+						"api",
+						"v1",
+						"cliente",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
