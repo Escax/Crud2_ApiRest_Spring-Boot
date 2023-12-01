@@ -6,5 +6,4 @@
 - MySql
 - Postman
 
-[bannerSB.png](https://postimg.cc/2VKLrxLq)
-
+[![bannerSB.png](https://i.postimg.cc/nhH4KRH1/bannerSB.png)](https://postimg.cc/2VKLrxLq)
